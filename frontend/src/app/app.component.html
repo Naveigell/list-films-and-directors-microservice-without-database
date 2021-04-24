@@ -1,0 +1,45 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="body">
+    <div class="films">
+        <h1>Film lists</h1>
+        <table >
+            <thead>
+                <td>No</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Action</td>
+            </thead>
+            <tbody>
+                <tr *ngFor="let film of films; index as i">
+                    <td> {{ i + 1 }} </td>
+                    <td> {{ film.title }} </td>
+                    <td> {{ film.description }} </td>
+                    <td> 
+                        <button (click)="removeFilms(i)">Delete</button>  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="directors">
+        <h1>Director lists</h1>
+        <table >
+            <thead>
+                <td>No</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Action</td>
+            </thead>
+            <tbody>
+                <tr *ngFor="let director of directors; index as i">
+                    <td> {{ i + 1 }} </td>
+                    <td> {{ director.name }} </td>
+                    <td> {{ director.born }} </td>
+                    <td> 
+                        <button (click)="removeDirector(i)">Delete</button>  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
