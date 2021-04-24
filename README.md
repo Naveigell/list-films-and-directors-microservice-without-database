@@ -1,7 +1,7 @@
 LIST FILM AND DIRECTOR WITHOUT DATABASE\
 
 Frontend = Angular\
-Server = nginx\
+Server = nginx
 
 Director service = node express\
-Film service = python flask\
+Film service = python flask
